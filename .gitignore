@@ -1,0 +1,36 @@
+# Virtual Environment
+venv/
+.env
+
+# Node.js Dependencies
+node_modules/
+
+# Python Bytecode
+*.pyc
+__pycache__/
+
+# Django Files
+*.sqlite3
+media/
+staticfiles/
+
+# IDE/Editor Files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# macOS System Files
+.DS_Store
+
+# PostgreSQL Database Dump
+*.sql
+
+# Local Development Files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency lock files
+package-lock.json
+yarn.lock

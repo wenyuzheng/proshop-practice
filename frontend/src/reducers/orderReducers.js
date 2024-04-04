@@ -10,13 +10,13 @@ import {
 
 export const orderCreateReducer = (state = {}, action) => {
   switch (action.type) {
-    case ORDER_DETAILS_REQUEST:
+    case ORDER_CREATE_REQUEST:
       return { loading: true };
 
-    case ORDER_DETAILS_SUCCESS:
+    case ORDER_CREATE_SUCCESS:
       return { loading: false, success: true, order: action.payload };
 
-    case ORDER_DETAILS_FAIL:
+    case ORDER_CREATE_FAIL:
       return { loading: false, error: action.payload };
 
     case ORDER_CREATE_RESET:
@@ -32,13 +32,13 @@ export const orderDetailsReducer = (
   action
 ) => {
   switch (action.type) {
-    case ORDER_CREATE_REQUEST:
+    case ORDER_DETAILS_REQUEST:
       return { ...state, loading: true };
 
-    case ORDER_CREATE_SUCCESS:
+    case ORDER_DETAILS_SUCCESS:
       return { loading: false, order: action.payload };
 
-    case ORDER_CREATE_FAIL:
+    case ORDER_DETAILS_FAIL:
       return { loading: false, error: action.payload };
 
     default:

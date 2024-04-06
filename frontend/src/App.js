@@ -15,6 +15,13 @@ import PaymentScreen from "./screens/PaymentScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
 
+const initialOptions = {
+  "client-id":
+    "AVtYNyvW-fl00_OqunMWa6UkFjP5eeTg30JIrVc0BVnUJRm6H1UOAh9QVV4h-JLutwj-p3rrt_JVmdZ9",
+  currency: "USD",
+  intent: "capture",
+};
+
 function App() {
   return (
     <Router>

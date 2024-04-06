@@ -10,7 +10,7 @@ import Loader from "../components/Loader";
 
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("Awesome!23");
 
   const navigate = useNavigate();
   const dispatch = useDispatch();

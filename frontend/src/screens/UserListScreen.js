@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Button, Table } from "react-bootstrap";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 
@@ -22,7 +22,7 @@ const UserListScreen = () => {
     } else {
       navigate("/login");
     }
-  }, [dispatch, navigate, successDelete]);
+  }, [dispatch, navigate, successDelete, userInfo]);
 
   const deleteHandler = (id) => {
     if (window.confirm("Are you sure to delete this user?")) {

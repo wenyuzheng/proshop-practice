@@ -8,6 +8,7 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 import { listProducts } from "../actions/productActions";
 import Paginate from "../components/Paginate";
+import ProductCarousel from "../components/ProductCarousel";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ const HomeScreen = () => {
         <Message variant="danger">{error}</Message>
       ) : (
         <div>
+          {!keyword && <ProductCarousel />}
           <Row>
             {products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
